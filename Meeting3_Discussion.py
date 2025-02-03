@@ -27,7 +27,7 @@ st.write(f"Aim: {aim}")
 # Create empty list for aims comments
 comments_aims = []
 # Comment on aims
-new_comment_aims = st.text_area("Leave a comment about the aims here:")
+new_comment_aims = st.text_area("Leave a comment about the title and aims here:")
 
 # Save comments to a temp list
 if st.button("Submit Aims Comment"):
@@ -39,8 +39,8 @@ with st.expander("Comments:"):
 
 # Assign objectives to a variable
 objective1 = "To compare the 5-year change in modifiable risk factors between the EVA, AVA, and SUPERNOVA groups."
-objective2 = "To compare the 5-year change in microvascular- and cardiac structure and function between the EVA, AVA, and SUPERNOVA groups."
-objective3 = "3.	To determine the strongest predictors at baseline of PWV and microvascular and cardiac changes at follow-up within the EVA, AVA, and SUPERNOVA groups respectively."
+objective2 = "To compare the 5-year change in cardiac structure and function between the EVA, AVA, and SUPERNOVA groups."
+objective3 = "To determine the strongest predictors at baseline of PWV and cardiac changes at follow-up within the EVA, AVA, and SUPERNOVA groups respectively."
 
 # Write objectives
 st.write(f"Objective 1: {objective1}")

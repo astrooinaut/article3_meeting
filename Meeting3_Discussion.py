@@ -78,7 +78,7 @@ with st.expander("Comments:"):
 Table_2 = "Draft table of hazard ratios"
 st.write(f"Table 2: {Table_2}")
 
-comments_table_1 = []
+comments_table_2 = []
 
 new_comment_table_2 = st.text_area("Leave a comment about Table 2 here:")
 if st.button("Submit Table 2 Comment"):

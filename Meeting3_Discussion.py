@@ -62,7 +62,7 @@ with st.expander("Comments:"):
 # Add a table describing how aim 1 and 2 will be answered
 Table_1 = "Draft table of descriptives"
 st.write(f"Table 1: {Table_1}")
-st.image("")
+st.image("astrooinaut/article3_meeting/Table_1.png")
 
 comments_table_1 = []
 

@@ -63,7 +63,7 @@ with st.expander("Comments:"):
 Table_1 = "Draft table of descriptives"
 st.write(f"Table 1: {Table_1}")
 
-st.image("Table_1")
+st.image("Table_1.png")
 
 comments_table_1 = []
 

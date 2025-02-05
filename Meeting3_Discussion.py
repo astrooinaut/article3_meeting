@@ -62,7 +62,6 @@ with st.expander("Comments:"):
 # Add a table describing how aim 1 and 2 will be answered
 Table_1 = "Draft table of descriptives"
 st.write(f"Table 1: {Table_1}")
-st.image("Table_1.png")
 
 comments_table_1 = []
 
@@ -78,7 +77,6 @@ with st.expander("Comments:"):
 # Add a table describing how aim 3 will be answered
 Table_2 = "Draft table of hazard ratios"
 st.write(f"Table 2: {Table_2}")
-st.image("")
 
 new_comment_table_2 = st.text_area("Leave a comment about Table 2 here:")
 if st.button("Submit Table 2 Comment"):

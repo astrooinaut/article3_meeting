@@ -5,7 +5,6 @@ Created on Wed Jan 29 11:58:13 2025
 
 @author: donavanrooi
 """
-import os
 import json
 import streamlit as st
 import gspread

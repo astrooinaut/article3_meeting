@@ -5,14 +5,22 @@ Created on Wed Jan 29 11:58:13 2025
 
 @author: donavanrooi
 """
-
+import os
+import json
 import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+
+# Load JSON from environment variable
+json_key = os.environ.get("SECRET_JSON")
+if json_key is None:
+    raise ValueError("Missing SECRET_JSON environment variable.")
         
 # Google Sheets authentication
+# creds = ServiceAccountCredentials.from_json_keyfile_name("SECRET_json", scope)
+creds_dict = json.loads(json_key)
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("mimetic-sweep-322719-1c455a049c9b.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 
 SHEET_NAME = "comments_test"

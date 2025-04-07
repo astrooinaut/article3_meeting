@@ -11,15 +11,9 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
-      - name: Create JSON Secret File
-        run: echo '${{ secrets.SECRET_JSON }}' > secrets.json
+name: Create JSON Secret File
+run: echo '${{ secrets.SECRET_JSON }}' > secrets.json
 
         
 # Google Sheets authentication

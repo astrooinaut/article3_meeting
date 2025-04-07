@@ -10,11 +10,15 @@ import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-
-name: Create JSON Secret File
-run: echo '${{ secrets.SECRET_JSON }}' > secrets.json
-
+      - name: Create secret file
+        run: echo "${{ secrets.SECRET_FILE }}" > secrets.toml
         
 # Google Sheets authentication
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]

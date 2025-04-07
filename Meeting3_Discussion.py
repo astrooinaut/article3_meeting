@@ -13,7 +13,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Load Google Service Account key from environment variable
-json_key = os.getenv("SECRET_JSON")
+json_key = os.getenv("mimetic-sweep-322719")
 if json_key is None:
     st.error("Missing SECRET_JSON environment variable.")
     st.stop()

@@ -12,7 +12,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Load JSON from environment variable
-json_key = os.environ.get("SECRET_JSON")
+json_key = os.getenv("SECRET_JSON")
 if json_key is None:
     raise ValueError("Missing SECRET_JSON environment variable.")
         

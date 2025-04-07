@@ -10,7 +10,7 @@ import streamlit as st
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-'''
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
 
       - name: Create JSON Secret File
         run: echo '${{ secrets.SECRET_JSON }}' > secrets.json
-'''
+
         
 # Google Sheets authentication
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]

@@ -26,7 +26,7 @@ jobs:
         run: pip install streamlit
 
       - name: Deploy or Run App (example)
-        run: |
+        run: Meeting3_Discussion.py
           # Use the secrets.json file however needed
           # For example, run your Streamlit app locally for testing
-          streamlit run app.py
+          

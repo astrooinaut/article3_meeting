@@ -13,10 +13,13 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # Load Google Service Account key from environment variable
-json_key = os.getenv("SECRET_JSON")
-if json_key is None:
-    st.error("Missing SECRET_JSON environment variable.")
-    st.stop()
+#json_key = os.getenv("SECRET_JSON")
+#if json_key is None:
+#    st.error("Missing SECRET_JSON environment variable.")
+#    st.stop()
+
+json_key = st.secrets["service_account"]["json_key"]
+creds_dict = json.loads(json_key)
 
 # Define Google Sheets scope
 scope = [
